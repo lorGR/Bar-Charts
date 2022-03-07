@@ -47,4 +47,10 @@ body {
     margin-left: 30px;
     display: inline-block;
     transform: translateY(340px);
+    position: relative;
+}
+
+.textPrecentage{
+    position: absolute;
+    top: -20px;
 }
