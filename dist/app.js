@@ -1,5 +1,5 @@
 var graphBox = document.querySelector('#graphBox');
-var arr = [60, 40];
+var arr = [60, 30, 10];
 function createColums(arr) {
     arr.forEach(function (element) {
         var newColum = document.createElement('div');
@@ -7,6 +7,9 @@ function createColums(arr) {
         console.log(element);
         newColum.classList.add('graph');
         newColum.style.height = element + "%";
+        // newColum.style.transform = `translateY(${854 - ((854 * element)/100)}px)`
+        // newColum.style.top = `${854 - ((854 * element)/100)}px`
+        console.log(newColum.style.top);
         newText.classList.add('textPrecentage');
         newText.innerHTML = element + "%";
         graphBox.appendChild(newColum);
