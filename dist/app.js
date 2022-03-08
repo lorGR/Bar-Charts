@@ -7,8 +7,8 @@ function createColums(arr) {
         console.log(element);
         newColum.classList.add('graph');
         newColum.style.height = element + "%";
-        // newColum.style.transform = `translateY(${854 - ((854 * element)/100)}px)`
-        console.log(newColum.style.top);
+        // newColum.style.cssText = `height: (${854 - ((854 * element)/100)}px)`
+        // console.log(newColum.style.top)
         newText.classList.add('textPrecentage');
         newText.innerHTML = element + "%";
         graphBox.appendChild(newColum);
